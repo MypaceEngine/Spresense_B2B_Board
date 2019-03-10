@@ -1,0 +1,87 @@
+
+(rules PCB Spresense_DIP
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 537)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 152.4)
+    (clear 200.2)
+    (clear 76.2 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_600:400_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
+  )
+  (via 
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_600:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    /GND "/3.3V_AU" /5V "/ACP_MICA" "/ACP_SPAP" "/ACP_MICB" "/ACP_SPAN" "/ACP_MICC"
+    "/ACP_SPBN" "/ACP_MICD" "/ACP_SPBP" "/ACP_MICBIASA" "/ACP_MICBIASB" "/SPR_SWDIO" "/SPR_SWDCLK" "/SPR_I2C0_SCL"
+    "/ACP_CLK_DMIC" "/SPR_I2C0_SDA" "/XRS_PWON" "/SPR_SPI4_SCK" "/GNSS_1PPS_OUT" "/SPR_SPI4_MISO" "/SPR_SEN_IRQ_IN" "/SPR_SPI4_MOSI"
+    "/SPR_HIF_IRQ_OUT" "/SPR_SPI4_CS_X" "/SPR_PWM2" "/SPR_RST_X" "/SPR_I2S0_LRCK" "/SPR_AP_CLK" "/SPR_SEN_AIN2" "/SPR_I2S0_DATA_OUT"
+    "/SPR_SEN_AIN3" "/SPR_PWM0" "/SPR_SEN_AIN4" "/SPR_PWM1" "/SPR_SEN_AIN5" "/SPR_I2S0_DATA_IN" "/SPR_SEN_AIN0" "/SPR_PWM3"
+    "/SPR_SEN_AIN1" "/SPR_I2S0_BCK" "/SPR_UART2_TX" "/SPR_SPI3_CS1_X" "/SPR_UART2_RX" "/SPR_SPI3_MOSI" "/SPR_UART2_RTS" "/SPR_SPI3_SCK"
+    "/SPR_UART2_CTS" "/SPR_SPI3_MISO" "/SPR_EMMC_CLK" "/SPR_SPI3_CS0_X" "/SPR_EMMC_CMD" "/RTC_IRQ_OUT" "/SPR_EMMC_DATA0" "/SPR_USB_DM"
+    "/SPR_EMMC_DATA1" "/SPR_USB_DP" "/SPR_EMMC_DATA2" "/GPS_EXTLD" "/SPR_EMMC_DATA3" "/ACP_GPO5" "/SPR_SPI2_SCK" "/ACP_GPO6"
+    "/SPR_SPI2_MISO" "/ACP_GPO7" "/SPR_SPI2_MOSI" "/ACP_VSYS" "/SPR_SPI2_CS_X" /1.8V "/SPR_SDIO_CMDDIR" "/SPR_SDIO_CD"
+    "/SPR_SDIO_CLK" "/I2C2_BDT" "/SPR_SDIO_CMD" "/I2C2_BCK" "/SPR_SDIO_DATA0" "/ACP_GPO0" "/SPR_SDIO_DATA1" "/ACP_GPO1"
+    "/SPR_SDIO_DATA2" "/ACP_GPO2" "/SPR_SDIO_DATA3" "/ACP_GPO3" /SWOCLK "/SPR_SDIO_WP" /SWO "/AGND_DRV"
+    "/AGND_MIC"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

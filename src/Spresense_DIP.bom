@@ -1,0 +1,4 @@
+Reference, Value, Footprint, Datasheet, Description, Height, Manufacturer_Name, Manufacturer_Part_Number, RS Part Number, RS Price/Stock, Mouser Part Number, Mouser Price/Stock
+P2,CONN_02X25,Pin_Headers:Pin_Header_Straight_2x25_Pitch2.54mm,
+P1,CONN_02X25,Pin_Headers:Pin_Header_Straight_2x25_Pitch2.54mm,
+J1,DF40HC(3.0)-100DS-0.4V(58),Spresense:spresense,https://www.hirose.com/product/en/download_file/key_name/DF40/category/Catalog/doc_file_id/31649/?file_category_id=4&item_id=22&is_series=1,Hirose DF40 Series 0.4mm Pitch 100 Way 2 Row Straight PCB Socket, Surface Mount, Solder Termination,3,Hirose,DF40HC(3.0)-100DS-0.4V(58),1362374P,http://uk.rs-online.com/web/p/products/1362374P,1362374P,http://uk.rs-online.com/web/p/products/1362374P
